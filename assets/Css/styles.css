@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --clr-pri-yellow: hsl(47, 88%, 63%);
+    --clr-neu-gray: hsl(0, 0%, 50%);
+    --clr-neu-black: hsl(0, 0%, 7%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Figtree, system-ui;
+    background: var(--clr-pri-yellow);
+}
+
+body .card {
+    width: 388px;
+    padding: 24px;
+    border: 1px solid var(--clr-neu-black);
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 8px 8px var(--clr-neu-black);
+}
+
+body .card:hover {
+    box-shadow: 16px 16px var(--clr-neu-black);
+    cursor: pointer;
+}
+
+body .card:hover h2{
+    color: var(--clr-pri-yellow);
+}
+
+.card > *:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.card .card-image img{
+    border-radius: 10px;
+}
+
+.card .card-content > *:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.card .card-content .content-tag {
+    width: 82px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 4px;
+    background-color: var(--clr-pri-yellow);
+}
+
+.card .card-content .published-date {
+    font-size: 14px;
+}
+
+.card .card-content h2 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.card .card-content .description {
+    color: var(--clr-neu-gray);
+}
+
+.card .card-author *{
+    vertical-align: middle;
+}
+
+.card .card-author img{
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+}
+
+.card .card-author span {
+    font-weight: 800;
+    font-size: 14px;
+}
+
+
+
+
